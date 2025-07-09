@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
     for (const number of numbers) {
       // Place a call using Twilio Voice API and play a message
       const call = await client.calls.create({
-        url: 'http://twimlets.com/message?Message%5B0%5D=This%20is%20an%20emergency%20call%20from%20AAS%20Safety%20App.%20Please%20check%20on%20your%20contact%20immediately.',
+        url: 'https://twi-ml-xml.vercel.app/',
         to: number,
         from: twilioNumber,
       });
